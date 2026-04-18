@@ -1,1 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishu Singhal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Rishu <span>Singhal</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link-anim">About</a></li>
+      <li><a href="#tools" class="nav-link-anim">Tools</a></li>
+      <li><a href="#projects" class="nav-link-anim">Projects</a></li>
+      <li><a href="https://drive.google.com/file/d/1__xwzsZzed80K26VY1Fqrvum-9vioocM/view?usp=drive_link"
+          target="_blank" >Resume</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Contact</a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-greeting">Hello! I'm</p>
+      <h1 class="hero-name">Rishu<br>Singhal</h1>
+      <p class="hero-desc">
+        A passionate Full Stack Developer & Blockchain enthusiast focused on building impactful tech solutions.
+        Exploring scalable web applications, problem-solving, and modern technologies. </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">⚡ See My Work</a>
+        <a href="https://github.com/rishusinghal15" class="btn btn-outline">GitHub</a>
+      </div>
+      <div class="hero-chips">
+        <span>C/C++</span><span>React.js</span><span>Node.js</span><span>Solidity</span><span>JavaScript</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-wrapper">
+        <div class="photo-slider">
+          <img src="images/profile.jpg" alt="Rishu Singhal" class="slide active" />
+          <img src="images/profile1.jpg" alt="Rishu Singhal" class="slide" />
+          <img src="images/profile2.jpg" alt="Rishu Singhal" class="slide" />
+          <div class="slider-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+        </div>
+        <div class="photo-badge badge-top">⚡ Open to Work</div>
+      </div>
+      <div class="hero-quote-box">
+        <span class="hq-mark">"</span>
+        <p class="hq-main">Code + Creativity = Impact</p>
+        <p class="hq-sub">Build boldly. Learn constantly. Ship relentlessly.</p>
+        <span class="hq-mark hq-mark-right">"</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I’m a pre-final year Computer Science undergraduate at JECRC University, Jaipur, specializing in Blockchain
+          Technology.</p>
+        <p>I’m a passionate full stack developer who enjoys building impactful and scalable web applications. I have
+          hands-on experience working with technologies like HTML, CSS, JavaScript, and REST APIs, and I’m continuously
+          exploring modern frameworks and tools to strengthen my development skills across both frontend and backend.
+        </p>
+        <p>Alongside development, I actively practice Data Structures and Algorithms to improve my problem-solving
+          abilities and write efficient, optimized code.</p>
+        <p>I’m always eager to learn, collaborate, and work on projects that challenge me to grow and create meaningful
+          impact through technology.</p>
+      </div>
+      <div class="journey-box">
+        <h3 class="journey-title">💼 Professional Journey</h3>
+
+        <div class="journey-item journey-green">
+          <span class="journey-icon">🎓</span>
+          <div>
+            <div class="journey-role">Head, Outgoing Exchange</div>
+            <div class="journey-org">IAESTE India LC JECRC</div>
+          </div>
+        </div>
+
+        <div class="journey-item journey-blue">
+          <span class="journey-icon">🎓</span>
+          <div>
+            <div class="journey-role">Deputy Head, Partnerships & Collaborations</div>
+            <div class="journey-org">JECRC Incubation Centre</div>
+          </div>
+        </div>
+
+
+        <div class="journey-item journey-green">
+          <span class="journey-icon">💻</span>
+          <div>
+            <div class="journey-role">Web Developer Intern</div>
+            <div class="journey-org">Codec Technologies Pvt. Ltd.</div>
+          </div>
+        </div>
+
+        <div class="journey-item journey-blue">
+          <span class="journey-icon">📚</span>
+          <div>
+            <div class="journey-role">EDP Course Coordinator</div>
+            <div class="journey-org">JECRC University</div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- TOOLS / SKILLS -->
+  <section id="tools">
+    <h2 class="section-title">Tools & Skills</h2>
+
+    <div class="tools-grid">
+
+      <div class="tools-container">
+        <h3 class="tools-label"> Programming Languages</h3>
+        <div class="tools-row">
+          <div class="tool-item"><i class="devicon-cplusplus-plain colored"></i><span>C/C++</span></div>
+          <div class="tool-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="tool-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+          <div class="tool-item"><i class="devicon-solidity-plain"></i><span>Solidity</span></div>
+        </div>
+      </div>
+
+      <div class="tools-container">
+        <h3 class="tools-label"> Frontend</h3>
+        <div class="tools-row">
+          <div class="tool-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+          <div class="tool-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+          <div class="tool-item"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind CSS</span></div>
+          <div class="tool-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+        </div>
+      </div>
+
+      <div class="tools-container">
+        <h3 class="tools-label"> Backend</h3>
+        <div class="tools-row">
+          <div class="tool-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+          <div class="tool-item"><i class="devicon-express-original"></i><span>Express.js</span></div>
+          <div class="tool-item"><i class="devicon-npm-original-wordmark colored"></i><span>NPM</span></div>
+        </div>
+      </div>
+
+      <div class="tools-container">
+        <h3 class="tools-label"> Database & Services</h3>
+        <div class="tools-row">
+          <div class="tool-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+          <div class="tool-item">
+            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+              style="width:2rem; height:2rem;" />
+            <span>Postman</span>
+          </div>
+          <div class="tool-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title" style="text-align:center;">Projects</h2>
+    <div class="section-underline"></div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-preview">
+          <div class="preview-placeholder">💱</div>
+        </div>
+        <div class="project-body">
+          <h3>Real-Time Currency Converter</h3>
+          <p>Live currency converter using REST APIs and async JavaScript with dynamic DOM updates, currency swap, and
+            input validation.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>REST API</span><span>HTML/CSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rishusinghal15/Real-Time-Currency-Conversion-Web-Application" target="_blank"
+              class="proj-btn proj-btn-live">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview">
+          <div class="preview-placeholder">⛓</div>
+        </div>
+        <div class="project-body">
+          <h3>Full-Stack PoW Blockchain System</h3>
+          <p>Custom Proof-of-Work blockchain with block validation, dynamic difficulty, REST APIs, and an interactive
+            block explorer.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>Express</span><span>Blockchain</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/rishusinghal15/Proof-of-Work-Blockchain-Explorer-Full-Stack-Implementation-"
+              target="_blank" class="proj-btn proj-btn-live">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-preview">
+          <div class="preview-placeholder">✈️</div>
+        </div>
+        <div class="project-body">
+          <h3>AI Trip Planner Web App</h3>
+          <p>AI-integrated travel planner generating smart itineraries based on user preferences, with responsive UI and
+            real-time API data.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI API</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" target="_blank" class="proj-btn proj-btn-live">Github</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="section-underline"></div>
+    <p class="contact-sub">Open to work, collabs and interesting conversations. Say hi anytime.</p>
+
+    <div class="contact-form-box">
+      <input type="text" class="form-input" placeholder="Your Name" />
+      <input type="email" class="form-input" placeholder="Email Address" />
+      <textarea class="form-input form-textarea" placeholder="Message"></textarea>
+      <button class="form-btn" onclick="handleContact()">Submit</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p class="footer-sub">Follow me on social media for updates and many more!</p>
+    <div class="footer-icons">
+      <a href="https://linkedin.com/in/rishusinghal" target="_blank" class="footer-icon-link" title="LinkedIn">
+        <i class="devicon-linkedin-plain"></i>
+      </a>
+      <a href="https://github.com/rishusinghal15" target="_blank" class="footer-icon-link" title="GitHub">
+        <i class="devicon-github-original"></i>
+      </a>
+      <a href="rishusinghal2404@gmail.com" class="footer-icon-link" title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">© 2026 Rishu Singhal. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
