@@ -1806,34 +1806,61 @@
         grid-template-columns: 1fr 1fr;
       }
 
+      /* REMOVE LINE */
       .trophies-timeline::before {
-        left: 20px;
+        display: none !important;
       }
 
+      /* FORCE SINGLE COLUMN */
       .timeline-item {
-        grid-template-columns: 40px 1fr;
+        display: block !important;
+        width: 100% !important;
+        max-width: 520px !important;
+        margin: 0 auto 40px auto !important;
+        text-align: center !important;
       }
 
-      .timeline-item.left .tl-content-left,
-      .timeline-item.right .tl-content-right {
-        display: none;
+      /* SHOW BOTH CONTENT BLOCKS */
+      .timeline-item .tl-content-left,
+      .timeline-item .tl-content-right {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
       }
 
-      .timeline-item.left .tl-content-right {
-        order: 1;
-        padding-left: 20px;
-        text-align: left;
-      }
-
-      .timeline-item.right .tl-content-left {
-        order: 1;
-        padding-left: 20px;
-        text-align: left;
-      }
-
+      /* ❌ REMOVE ALL DOTS (THIS FIXES YOUR EXTRA ICON ISSUE COMPLETELY) */
       .tl-dot {
-        order: 0;
+        display: none !important;
       }
+
+      /* YEAR CENTER */
+      .tl-year {
+        text-align: center !important;
+        margin-bottom: 8px !important;
+      }
+
+      /* BADGE CENTER (ODD + EVEN SAME) */
+      .tl-badge {
+        display: inline-block !important;
+        margin: 12px auto !important;
+        text-align: center !important;
+      }
+
+      /* TEXT FIX */
+      .tl-desc {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 14px !important;
+        text-align: center !important;
+        line-height: 1.6 !important;
+        white-space: normal !important;
+        word-break: normal !important;
+      }
+
 
       .hero-stats {
         gap: 24px;
@@ -1850,13 +1877,12 @@
       .match-score {
         display: none;
       }
-    }
 
-    @media (max-width: 480px) {
-      .achievements-grid {
-        grid-template-columns: 1fr;
+      @media (max-width: 480px) {
+        .achievements-grid {
+          grid-template-columns: 1fr;
+        }
       }
-    }
   </style>
 </head>
 
@@ -1895,9 +1921,9 @@
   <div class="ticker-wrap" style="margin-top:70px;">
     <span class="ticker-content">
       IPL 2016 Champions &nbsp;&nbsp;★&nbsp;&nbsp; IPL 2018 Runners-up &nbsp;&nbsp;★&nbsp;&nbsp; IPL 2024 Runners-up
-      &nbsp;&nbsp;★&nbsp;&nbsp; IPL 2026 — 3W 3L (4th in table) &nbsp;&nbsp;★&nbsp;&nbsp; Highest IPL Score: 287/3 vs
+      &nbsp;&nbsp;★&nbsp;&nbsp; IPL 2026 — 4W 3L (3rd in table) &nbsp;&nbsp;★&nbsp;&nbsp; Highest IPL Score: 287/3 vs
       RCB (Apr 2024) &nbsp;&nbsp;★&nbsp;&nbsp; Ishan Kishan (Captain 2026) &nbsp;&nbsp;★&nbsp;&nbsp; Liam Livingstone ·
-      Jack Edwards · Shivam Mavi · New Signings 2026 &nbsp;&nbsp;★&nbsp;&nbsp; Rise of the Orange Army!
+      Shivam Mavi · New Signings 2026 &nbsp;&nbsp;★&nbsp;&nbsp; Rise of the Orange Army!
       &nbsp;&nbsp;★&nbsp;&nbsp;
     </span>
   </div>
